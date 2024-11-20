@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    max-width: 1440px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 575px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "div text";       
+    grid-template-columns: 300px 250px;
+
+    
+}
+
+.container div {
+    grid-area: div;
+}
+
+.container img{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+   
+    
+}
+
+.container .text {
+    width: 300px;
+    grid-area: text;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    
+}
+
+.container .text span {
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+.container .text h1 {
+    line-height: 30px;
+}
+
+.container .text p {
+    line-height: 20px;
+    color: hsl(228, 12%, 48%);
+}
+.container .text b {
+    color:  hsl(158, 36%, 37%);
+    font-size: 30px;
+   
+    
+}
+
+.container .text .cost {
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:hsl(228, 12%, 48%);
+    
+}
+
+.container .text button {
+    background-color: hsl(158, 36%, 37%) ;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.container .text button i {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "div"
+                             "text";
+        grid-template-rows: 1fr 1fr ;       
+        
+}
+
+  
+
+
+
+
+
+}
